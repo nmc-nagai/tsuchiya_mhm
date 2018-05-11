@@ -32,8 +32,8 @@ $(document).ready(function() {
 			if(index == 1 ){
 				//セクション1からスクロールしたとき実行されます
 				// particlesJS();
-				$("#p1 .article img").css("opacity","0").css("transition","0.5s");
-				$("#p1 .article img.third").css("width","23%" ).css("opacity","0").css("transition","0.5s");;
+				// $("#p1 .article img").css("opacity","0").css("transition","0.5s");
+				// $("#p1 .article img.third").css("width","23%" ).css("opacity","0").css("transition","0.5s");;
 				// $("p.link.first").css("display","none").css("opacity","0" ).css("transition","0.7s");
 
 			}
