@@ -26,11 +26,18 @@ body {
 /* ーーーーーーーーーーーーーーーーーーーーーー 文字 ーーーーーーーーーーーーーーーーーーーーーー */
 
 h1 {
-    padding: 0 0 2rem 2rem;
-    text-shadow: 0.05rem 0.05rem 0.8rem #000;
+    text-shadow: 0.02rem 0.02rem 0.5rem #000;
     color: #fff;
+    font-size: 4rem;
+    margin: auto;
+    position: absolute;
+    bottom: 33%;
+    left: 0;
+    right: 0;
+    text-align: center;
 }
-h1, h2 {
+h2 {
+    font-family: "a-otf-ryumin-pr6n";
     font-size: 6rem;
     line-height: 1.2;
     letter-spacing: 0.5rem;
@@ -38,7 +45,6 @@ h1, h2 {
 h2, h3{
     margin: 0;
     box-sizing: border-box;
-    font-family: "a-otf-ryumin-pr6n";
     font-weight: 400;
 }
 #p2 .article h2 {
@@ -51,15 +57,22 @@ h2, h3{
     margin-bottom: .5rem;
     line-height: 1.3;
 }
+.article4 h2 {
+    font-size: 6rem;
+    letter-spacing: 0;
+    text-align: center;
+    /* margin-bottom: .5rem;
+    line-height: 1.3; */
+}
+
 div.title span {
     letter-spacing: 1rem;
 }
-h2 {
-}
-h3 {
+#p2 h3, #p3 h3 {
+    font-family: "a-otf-ryumin-pr6n";
     font-size: 2.4rem;
-    text-align: center;
     letter-spacing: 0.1rem;
+    
 }
 #p2 .article h3 {
     margin-top: 2rem;
@@ -131,6 +144,18 @@ a:link, a:visited, a:hover, a:active {color: #555;}
 img {
     width: 100%;
 }
+.circle{
+    display: inline-block;
+    width: 13rem;
+    height: 13rem;
+    border-radius: 50%;
+    background: #ff0000;
+    font-size: 2.2rem;
+    text-align:center;
+    line-height: 13rem;
+    color: #FFFFFF;
+    vertical-align: middle;
+  }
 /* fullpage.cssの修正 */
 
 #fullpage {
@@ -168,7 +193,7 @@ img {
     height: 100% !important;
 }
 
-.fp-tableCell {
+#p1 .fp-tableCell {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -239,8 +264,8 @@ div.next img, div.back img {
     position: relative;
 }
 
-#p1 .fp-scroller, #p3 .fp-scroller {
-        display: flex;
+#p1 .fp-scroller {
+    display: flex;
     justify-content: center;
     align-items: center;
     height: 100%;
@@ -291,20 +316,6 @@ div.next img, div.back img {
     background-size: cover;
     background-repeat: no-repeat;
     position: relative;
-}
-#p2 .article .main_image h3 {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    margin: auto;
-    text-shadow: 0.05rem 0.05rem 0.8rem #000;
-    color: #fff;
-    line-height: 1.8;
-}
-#p2 .article .main_image h3 span{
-    font-size: 6rem;
-    line-height: 1;
 }
 #p2 .article div.title .cap_img{
     position: absolute;
@@ -465,9 +476,6 @@ div.next img, div.back img {
     }
     #p2 .article2 div.ryucheru p {
     }
-    br.sp {
-        display: none;
-    }
     #p3 footer {
         height: 9rem;
     }
@@ -477,17 +485,38 @@ div.next img, div.back img {
     html, body {
         font-size: 10px;
     }
-    h1, h2 {
+    h2 {
         font-size: 10rem;
         letter-spacing: 1.5rem;
     }
     #p2 h2 {
     }
+    .article h3 {
+        text-align: left;
+    }
+    #p2 .article2 {
+        justify-content: space-between;
+    }
     #p2 .article2 h3 {
         width: 38.2%;
         text-align: left;
     }
+    #p2 .article2 div.cont {
+        flex: 0 0 47.5%;
+    }
     #p2 .article2 div.cont.ryucheru {
         margin-bottom: 0;
     }
+    #p2 .article2 div.cont.ryucheru .second{
+        height: auto;
+        width: 16rem;
+    }
+    #p2 .article2 div.cont.kasai .second{
+        height: auto;
+        width: 24rem;
+    }
+    br.sp {
+        display: none;
+    }
+
 }
