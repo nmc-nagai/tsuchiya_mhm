@@ -4,7 +4,7 @@
 html {
     height: 100%;
     font-family: serif;
-    font-size: 2.5vw;
+    font-size: 2.2vw;
 }
 
 body {
@@ -25,36 +25,48 @@ body {
 
 /* ーーーーーーーーーーーーーーーーーーーーーー 文字 ーーーーーーーーーーーーーーーーーーーーーー */
 
+h1 {
+    padding: 0 0 2rem 2rem;
+    text-shadow: 0.05rem 0.05rem 0.8rem #000;
+    color: #fff;
+}
+h1, h2 {
+    font-size: 6rem;
+    line-height: 1.2;
+    letter-spacing: 0.5rem;
+}
 h2, h3{
     margin: 0;
     box-sizing: border-box;
     font-family: "a-otf-ryumin-pr6n";
     font-weight: 400;
 }
-h1, h2 {
-    font-size: 5rem;
-    line-height: 1.2;
+#p2 .article h2 {
+    position: relative;
 }
-h1 {
-    padding: 0 0 2rem 2rem;
-    text-shadow: 0.05rem 0.05rem 0.8rem #000;
-    color: #fff;
+#p2 .article3 h2 {
+    font-size: 3rem;
+    color: #817251;
+    letter-spacing: 0.1rem;
+    margin-bottom: .5rem;
+    line-height: 1.3;
 }
 div.title span {
     letter-spacing: 1rem;
 }
 h2 {
-    letter-spacing: 0.3rem;
-    margin-bottom: 1rem;
-    flex: 0 0 90%;
 }
 h3 {
-    font-size: 2rem;
+    font-size: 2.4rem;
     text-align: center;
-    line-height: 2;
+    letter-spacing: 0.1rem;
 }
-#p2 h3 {
-    padding-bottom: 5rem;
+#p2 .article h3 {
+    margin-top: 2rem;
+    line-height: 1.7;
+}
+#p2 .article2 h3 {
+    flex: 1 1 382px
 }
 #p3 h3 {
     margin: 1rem auto;
@@ -62,10 +74,10 @@ h3 {
     font-size: 1.8rem;
 }
 p {
-    font-size: 1.5rem;
+    font-size: 1.6rem;
     line-height: 1.5;
-    margin: 0 0 2rem;
     font-family: "fot-rodin-pron", sans-serif;
+    margin: 0;
 }
 
 p.link {
@@ -103,19 +115,22 @@ p.link.first {
     left: 0;
     right: 0;
 }
-#p3 p {
-    text-shadow: 0px 0px 0.05rem #fff, 0px 0px 0.4rem #fff;
-    color: #000;
+
+#p2 .article3 p {
+    margin-bottom: 1rem;
 }
-#p2 p {
-    letter-spacing: 0.1rem;
-    padding-left: 1.5rem;
-}
+        #p3 p {
+            text-shadow: 0px 0px 0.05rem #fff, 0px 0px 0.4rem #fff;
+            color: #000;
+        }
 
 a { text-decoration: none;}
 a:hover { text-decoration: none;}
 a:link, a:visited, a:hover, a:active {color: #555;}
 
+img {
+    width: 100%;
+}
 /* fullpage.cssの修正 */
 
 #fullpage {
@@ -142,8 +157,14 @@ a:link, a:visited, a:hover, a:active {color: #555;}
     padding: 0;
     color: #000;
 }
-
-#p4, #p1 {
+.article, .inner {
+    margin-bottom: 5rem;
+}
+.inner {
+    max-width: 1000px;
+    width: 90%;    
+}
+#p4 {
     height: 100% !important;
 }
 
@@ -191,13 +212,23 @@ a:link, a:visited, a:hover, a:active {color: #555;}
     width: 62%;
 }
 div.next, div.back {
-    height: 5vh;
-    width: 100%;
+    display: inline-block;
     text-align: center;
+}
+div.next p {
+    color: #817251;
+}
+div.next::after {
+    content: "";
+    border-top: solid 3rem #817251;
+    border-left: solid 3rem transparent;
+    border-right: solid 3rem transparent;
+    display: inline-block;
 }
 
 div.next img, div.back img {
     height: 3rem;
+    width: auto;
     z-index: 10;
     max-height: 50px;
     position: absolute;
@@ -216,11 +247,7 @@ div.next img, div.back img {
 }
 
 #p1 .article {
-    /* height: 100%; */
     width: 80%;
-    /* margin: calc((133% - 37vw) / 2) auto 0; */
-    line-height: 1.3;
-    position: relative;
     max-width: 500px;
 }
 #p1 .article img.first {
@@ -246,15 +273,15 @@ div.next img, div.back img {
 
 #p2 .article {
     /* max-width: 1000px; */
-    padding-bottom: 5%;
 }
 #p2 .article div.title {
-    position: relative;
     display: flex;
-    margin: 5rem auto 2rem;
-    flex-direction: column;
-    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
     width: 100%;
+    max-width: 1000px;
+    padding: 3rem 0 0;
+    margin: auto;
 }
 #p2 .article .main_image {
     width: 100%;
@@ -281,71 +308,83 @@ div.next img, div.back img {
 }
 #p2 .article div.title .cap_img{
     position: absolute;
-    top: -25%;
+    top: -60%;
     left: 50%;
-    width: 45%;
+    width: 50%;
 }
-#p3 .article {
-    max-width: 1000px;
-    width: 80%;
-    margin: 5% auto;
+#p2 .article2 {
     display: flex;
     flex-wrap: wrap;
     /* padding-bottom: 6rem; */
 }
-#p3 {
+#p2 {
     overflow: hidden;
 }
 
-#p3 .article div.cont {
+#p2 .article2 div.cont {
     position: relative;
-    text-align: center;
-    margin-bottom: 6rem;
     flex: 1 1 500px;
 }
-#p3 .article div .first{
+#p2 .article2 div.cont.ryucheru {
+    margin-bottom: 10%;
+}
+#p2 .article2 div .first{
     width: 100%;
 }
-#p3 .article div .second{
+#p2 .article2 div .second{
     position: absolute;
     bottom: 0;
-    height: 75vw;
+    height: 68vw;
+    width: auto;
 }
-#p3 .article div.ryucheru .second{
-    left: -16%;
+#p2 .article2 div.ryucheru .second{
+    left: -10%;
 }
-#p3 .article div.kasai .second{
-    right: -20%;
+#p2 .article2 div.kasai .second{
+    right: -10%;
 }
-#p3 .article div p{
-    /* width: 22rem; */
-    text-align: left;
+#p2 .article2 div.ryucheru p{
+    margin: 0.5rem 0 0 auto;
+    width: 75%;
 }
-#p3 .article div.ryucheru p{
-    margin: 1rem 0 0 auto;
-    width: 68%;
-}
-#p3 .article div.kasai p{
-    margin: 1rem auto 0 0;
+#p2 .article2 div.kasai p{
+    margin: 0.5rem auto 0 0;
+    text-align: right;
+    width: 65%;
 }
 
-#p3 .article div.mhm {
+#p2 .article2 div.mhm {
     
 }
 
-#p3 .article div.mhm div {
+#p2 .article2 div.mhm div {
     flex: 0 0 30%;
     z-index: 100;
 }
-#p3 .article div.mhm div img {
+#p2 .article2 div.mhm div img {
     width: 100%;
     margin-bottom: 3rem;
     box-shadow: 2px 2px 5px #ccc;
 }
-#p3 .article > p {
+#p2 .article2 > p {
     text-align: center;
     margin: 0 auto 1rem;
 }
+#p2 .article3 {
+    text-align: center;
+} 
+
+#p2 .article3 div.mhm {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 100%;
+} 
+#p2 .article3 div.mhm div {
+    width: 90%;
+    margin: 0 5% 10%;
+} 
+
 #p3 div.next {
     background-color: #ECEADA;
 }
@@ -374,20 +413,18 @@ div.next img, div.back img {
 }
 
 @media screen and (min-width: 768px) {
+    #p1 .article {
+        /* margin: calc((100vh - 370px) / 2) auto 0; */
+    }
+    #p2 .article3 div.mhm div {
+        margin: 0 0 5%;
+        width: 30%;
+    }
     #p4 .article {
         width: 60vw;
         margin: calc((100vh - 370px) / 2) auto 0;
         height: 37vw;
     }
-    #p1 .article {
-        /* margin: calc((100vh - 370px) / 2) auto 0; */
-    }
-    #p3 .article div.mhm {
-        display: flex;
-        justify-content: space-between;
-        width: 100%;
-    } 
-
 }
 @media screen and (min-width: 568px) and (orientation: landscape) {
     html, body {
@@ -409,32 +446,24 @@ div.next img, div.back img {
         height: 62vh;
     }
     #p2 .article div.title .cap_img {
-        height: 45%;
-        width: auto;
     }
 }
 @media screen and (min-width: 1000px) and (orientation: landscape) {
     html, body {
-        font-size: 16px;
+        font-size: 10px;
     }
-    #p2 .article {
-        padding-top: 5%;
-    }
-    
-    #p3 .article {
+    #p2 .article2 {
         justify-content: space-between;
     }
-    #p3 .article div.cont {
-        flex: 0 0 45%;
+    #p2 .article2 div.cont {
+        flex: 0 0 47.5%;
     }
-    #p3 .article div .second {
-        height: 95%;
+    #p2 .article2 div .second {
+        height: 90%;
     }
-    #p3 .article p {
-        font-size: 1.2rem;
+    #p2 .article2 p {
     }
-    #p3 .article div.ryucheru p {
-        margin: 2rem 0 0 auto;
+    #p2 .article2 div.ryucheru p {
     }
     br.sp {
         display: none;
@@ -446,11 +475,19 @@ div.next img, div.back img {
 }
 @media screen and (min-width: 1000px) {
     html, body {
-        font-size: 16px;
+        font-size: 10px;
     }
-    #p2 .article div.title .cap_img {
-        top: -27%;
-        width: 300px;
-        height: auto;
+    h1, h2 {
+        font-size: 10rem;
+        letter-spacing: 1.5rem;
+    }
+    #p2 h2 {
+    }
+    #p2 .article2 h3 {
+        width: 38.2%;
+        text-align: left;
+    }
+    #p2 .article2 div.cont.ryucheru {
+        margin-bottom: 0;
     }
 }
