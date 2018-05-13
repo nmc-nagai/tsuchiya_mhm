@@ -271,26 +271,26 @@ ul, li, dl, dd, dt {
     text-align: center;
 }
 
-#p4 .article img {
+ .article img {
     /* position: absolute; */
 }
-#p4 .article img.first {
+.article9 img.first {
     /* top: 0; */
-    width: 100%;
+    width: 80%;
     transition: 0.5s;
     transition-delay: 0.2s;
 
 }
-#p4 .article img.second {
+.article9 img.second {
     /* top: 45%; */
     transition-delay: 1.2s;
-    width: 10%;
+    width: 8%;
     margin: 1.5rem 0 1rem;
 }
-#p4 .article img.third {
+.article9 img.third {
     /* bottom: 0; */
     transition-delay: 1.9s;
-    width: 62%;
+    width: 50%;
 }
 div.next, div.back {
     display: inline-block;
@@ -596,7 +596,9 @@ div.next img, div.back img {
     width: 61.8%;
 }
 .article5 .right dt::before,
-.article5 .right dt::after {
+.article5 .right dt::after,
+.article7 li div::before,
+.article7 li div::after {
     content: "";
     position: absolute;
     top: 0;
@@ -608,12 +610,14 @@ div.next img, div.back img {
 .article5 .right dt {
     position: relative;
 }
-.article5 .right dt::before {
+.article5 .right dt::before,
+.article7 li div::before {
     left: 0;
     border-width: 18vw 32vw 0 0;
     border-color: #fff transparent transparent transparent;
 }
-.article5 .right dt::after {
+.article5 .right dt::after,
+.article7 li div::after  {
     left: 50%;
     border-width: 0 32vw 18vw 0;
     border-color: transparent #fff transparent transparent;
@@ -632,6 +636,162 @@ div.next img, div.back img {
     line-height: 1.6;
 
 }
+.article6 h2, .article7 h2, .article8 h2 {
+    font-size: 4rem;
+    text-align: center;
+    letter-spacing: 0.3rem;
+}
+.article6 h3 {
+    font-size: 2.2rem;
+    line-height: 1.4;
+    margin-bottom: 0.5rem;
+}
+.article6 h2, .article6 p, .article7 h2 {
+    margin-bottom: 2rem;
+}
+.article6 .large_sec, .article6 .small_sec {
+    justify-content: space-between;
+} 
+.article6 figure {
+    margin-bottom: 1rem;
+}
+.article6 figure, .article6 figure .def {
+    position: relative;
+}
+.article6 figure img {
+    position: absolute;
+}
+.article6 figure .kasai {
+    bottom: 0%;
+    left: -10%;
+    width: 45%;
+}
+.article6 figure .sp_img1 {
+    top: 5%;
+    right: 5%;
+    width: 18%;
+}
+.article6 figure .sp_img2 {
+    bottom: 5%;
+    right: 15%;
+    width: 18%;
+}
+.article6 figure .ryucheru {
+    bottom: 0;
+    right: -10%;
+    width: 50%;
+}
+.article6 figure .pair {
+    padding-top: 5%;
+    padding-left: 10%;
+}
+.article6 figure .custum1 {
+    top: 0;
+    left: 0;
+    width: 25%;
+}
+.article6 figure .custum2 {
+    bottom: 5%;
+    left: -5%;
+    width: 25%;
+}
+.article6 .last{
+    margin-bottom: 0;
+}
+.article7 h2 {
+    font-size: 4rem;
+}
+.article7 {
+    text-align: center;
+}
+.article7 ul{
+    margin-bottom: 3rem;
+    justify-content: center;
+}
+
+.article7 li div {
+    position: relative;
+    width: 63vw;
+    margin: 6rem auto 1rem;
+}
+.article7 li p {
+    margin-bottom: 0.5rem;
+}
+
+.article7 li div span {
+    position: absolute;
+    top: -10vw;
+    right: -5vw;
+    background-color: #ffff00;
+    padding: 1rem;
+    width: 25vw;
+    height: 25vw;
+    border-radius: 50%;
+    z-index: 10;
+    display: flex;
+    align-items: center;
+    line-height: 1.4;
+    justify-content: center;
+    flex-direction: column;
+}
+.article7 li div span img {
+    width: 1.5rem;
+}
+.article7 li h3 span {
+    font-size: 1.2rem;
+}
+.article7 li h3 img {
+    width: 8rem;
+    vertical-align: middle;
+}
+.article8 h2 {
+    margin-bottom: 2rem;
+}
+.article8 .flex {
+    justify-content: center;
+    margin-bottom: 2rem;
+}
+
+.article8 .honcho {
+    text-align: center;
+    border: solid 1px #817251;
+    padding: 1rem;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+.article8 .honcho p {
+    font-size: 1.2rem;
+}
+.article8 .honcho_img, .article8 .detail {
+    width: 50%;
+}
+.article8 .liz_rogo {
+    width: 50%;
+    margin: auto;
+    margin-bottom: 0.3rem;
+}
+.article8 figcaption {
+    font-size: 1.2rem;
+    letter-spacing: 0.5rem;
+    color: #817251;
+    margin-bottom: 0.3rem;
+}
+.article8 .text {
+    line-height: 1.8;
+    text-align: center;
+}
+.article9 {
+    height: 100vh;
+    position: relative;
+}
+.article9  p{
+    position: absolute;
+    bottom: 0%;
+    left: 0;
+    right: 0;
+    text-align: center;
+}
+
 #p3 div.next {
     background-color: #ECEADA;
 }
@@ -813,6 +973,54 @@ div.next img, div.back img {
         right: 0;
         top: -50px;
         z-index: 10;
+    }
+    .article6 .large_sec section {
+        width: 48%;
+    }     
+    .article6 .small_sec figure {
+        width: 65%;
+    }     
+    .article6 .small_sec div {
+        width: 33%;
+        padding-top: 2.5%;
+    }
+    .article6 figure .pair {
+        padding-left: 30%;
+    }
+    .article6 figure .custum1 {
+        left: 20%;
+    }
+    .article6 figure .custum2 {
+        left: 0;
+    }
+    .article7 li{
+        width: 33%
+    }    
+    .article7 li div {
+        width: 250px;
+    }
+    .article7 li div::before {
+        left: 0;
+        border-width: 70px 125px 0 0;
+        border-color: #fff transparent transparent transparent;
+    }
+    .article5 .right dt::after, .article7 li div::after {
+        left: 50%;
+        border-width: 0 125px 70px 0;
+        border-color: transparent #fff transparent transparent;
+    }
+    .article7 li div span {
+        width: 100px;
+        height: 100px;
+        top: -40px;
+        right: -20px;
+    }
+    .article8 .text {
+        text-align: left;
+        margin-left: 1rem
+    }
+    .article9 h1 {
+        width: 30%;
     }
     br.sp {
         display: none;
