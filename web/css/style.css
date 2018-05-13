@@ -58,17 +58,19 @@ h2, h3{
     line-height: 1.3;
 }
 .article4 h2 {
-    font-size: 6rem;
+    font-size: 3rem;
     letter-spacing: 0;
     text-align: center;
-    /* margin-bottom: .5rem;
-    line-height: 1.3; */
+    margin-bottom: 2rem;
 }
 
 div.title span {
     letter-spacing: 1rem;
 }
-#p2 h3, #p3 h3 {
+#p1 h3 {
+    font-family: serif;
+}
+h3 {
     font-family: "a-otf-ryumin-pr6n";
     font-size: 2.4rem;
     letter-spacing: 0.1rem;
@@ -128,33 +130,75 @@ p.link.first {
     left: 0;
     right: 0;
 }
-
+p.price_cap{
+    text-align: right;
+    font-size: 1.2rem;
+    position: absolute;
+    bottom: -0.5rem;
+    right: 0;
+}
 #p2 .article3 p {
     margin-bottom: 1rem;
 }
-        #p3 p {
-            text-shadow: 0px 0px 0.05rem #fff, 0px 0px 0.4rem #fff;
-            color: #000;
-        }
+small {
+    font-size: 1rem;
+}
 
 a { text-decoration: none;}
 a:hover { text-decoration: none;}
-a:link, a:visited, a:hover, a:active {color: #555;}
+/* a:link, a:visited, a:hover, a:active {color: #555;} */
 
 img {
     width: 100%;
 }
+figure{
+    margin: 0;
+}
+ul, li, dl, dd, dt {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    font-family: "fot-rodin-pron", sans-serif;
+}
+.btn_box {
+    text-align: center;
+}
+.button{
+    border:1px solid #c3b980; -webkit-border-radius: 3px; -moz-border-radius: 3px;border-radius: 3px;font-size:16px; padding: 12px 12px 12px 12px; text-decoration:none; display:inline-block;text-shadow: -1px -1px 0 rgba(0,0,0,0.3); color: #FFFFFF;
+     background-color: #d5cea6; background-image: -webkit-gradient(linear, left top, left bottom, from(#d5cea6), to(#b7ad70));
+     background-image: -webkit-linear-gradient(top, #d5cea6, #b7ad70);
+     background-image: -moz-linear-gradient(top, #d5cea6, #b7ad70);
+     background-image: -ms-linear-gradient(top, #d5cea6, #b7ad70);
+     background-image: -o-linear-gradient(top, #d5cea6, #b7ad70);
+     background-image: linear-gradient(to bottom, #d5cea6, #b7ad70);filter:progid:DXImageTransform.Microsoft.gradient(GradientType=0,startColorstr=#d5cea6, endColorstr=#b7ad70);
+    }
+    
+    .button:hover{
+     border:1px solid #b4a861;
+     background-color: #c5bb83; background-image: -webkit-gradient(linear, left top, left bottom, from(#c5bb83), to(#a29752));
+     background-image: -webkit-linear-gradient(top, #c5bb83, #a29752);
+     background-image: -moz-linear-gradient(top, #c5bb83, #a29752);
+     background-image: -ms-linear-gradient(top, #c5bb83, #a29752);
+     background-image: -o-linear-gradient(top, #c5bb83, #a29752);
+     background-image: linear-gradient(to bottom, #c5bb83, #a29752);filter:progid:DXImageTransform.Microsoft.gradient(GradientType=0,startColorstr=#c5bb83, endColorstr=#a29752);
+    }
+
+
 .circle{
     display: inline-block;
-    width: 13rem;
+    /* width: 13rem;
     height: 13rem;
+    line-height: 13rem; */
+    width: 11rem;
+    height: 11rem;
+    line-height: 11rem;
     border-radius: 50%;
     background: #ff0000;
     font-size: 2.2rem;
     text-align:center;
-    line-height: 13rem;
     color: #FFFFFF;
     vertical-align: middle;
+    margin-bottom: 1rem;
   }
 /* fullpage.cssの修正 */
 
@@ -169,6 +213,15 @@ img {
 .c_c{
     justify-content: center;
     align-items: center;
+}
+.txt_c{
+    text-align: center;
+}
+.txt_r{
+    text-align: right;
+}
+.rel {
+    position: relative;
 }
 .bottom {
     position: absolute;
@@ -188,6 +241,9 @@ img {
 .inner {
     max-width: 1000px;
     width: 90%;    
+}
+.small_box {
+    flex: 1 1 344px;
 }
 #p4 {
     height: 100% !important;
@@ -383,6 +439,7 @@ div.next img, div.back img {
 }
 #p2 .article3 {
     text-align: center;
+    margin-bottom: 2rem;
 } 
 
 #p2 .article3 div.mhm {
@@ -395,7 +452,186 @@ div.next img, div.back img {
     width: 90%;
     margin: 0 5% 10%;
 } 
+.article4 .price {
+    margin-bottom: 3rem;
+} 
+.article4 .parse {
+    padding: 3rem 3rem 0;
+    justify-content: center;
+    background-color: #C3BCAC;
+    list-style: none;
+    margin-bottom: 2rem;
+    flex: 1 1 556px;
+} 
+.article4 .parse li {
+    margin-bottom: 2rem;
+    flex: 0 0 240px;
+} 
+.article4 .model_info {
+    justify-content: center;
+}
+.article4 dt, .article4 dd {
+    margin-bottom: 1rem;
+}
+.article4 .logo {
+    order: 2;
+    margin-left: 1rem;
+    width: 65%;
+}
+.article4 .area {
+    order: 1;
+    background-color: #FFF000;
+    text-align: center;
+    font-size: 1rem;
+    padding: 0.5rem;
+    width: 17%;
+} 
+.article4 .area span {
+    font-size: 1.4rem;
+    display: block;
+} 
+.article4 .area span.hr {
+    border-bottom: solid 1px;
+    margin-bottom: 0.2rem;
+} 
+.article4 .image {
+    order: 3;
+    width: 32%;
+}
+.article4 .info {
+    order: 4;
+    font-size: 1.2rem;
+    line-height: 1.8;
+    margin-left: 1rem;
+    width: 50%;
+}
+.article4 .period {
+    margin-left: 9%;
+    margin-bottom: 2rem;
+}
+.article4 p.small {
+    margin-bottom: 2rem;
+}
+.article4 .detail {
+    border: solid 1px #817251;
+    padding: 2rem 2rem 1rem;
+    margin-bottom: 2rem;
+}
+.article4 .detail p {
+    margin-bottom: 1rem;
+}
+.article4 .detail span{
+    color: #817251;
+}
+.article5 h2 {
+    font-size: 3rem;
+    text-align: center;
+    letter-spacing: 0;
+    margin-bottom: 2rem;
+    line-height: 1.5;
+}
+.article5 .rogo {
+    line-height: normal;
+}
+.article5 .rogo img{
+    width: 61.8%;
+    vertical-align: bottom;
+}
+.article5 .quality {
+    margin-bottom: 2rem;
+    position: relative;
+}
+.article5 .quality h3 {
+    font-size: 1.6rem;
+    text-align: center;
+    margin-bottom: 1rem;
+    flex: 1 0 auto;
+}
+.article5 .quality h3 span {
+    font-size: 3.5rem;
+    display: block;
+}
+.article5 .quality .words {
+    font-size: 1.4rem;
+}
+.article5 .quality figure {
+    margin-bottom: 2rem;
+}
+.article5 .modelhouse {
+    position: relative;
+}
+.article5 .modelhouse .left {
+    order: 1;
+}
+.article5 .modelhouse .right {
+    order: 0;
+    width: 63vw;
+    margin: auto;
+    margin-bottom: 2rem;
+}
+.article5 .modelhouse h3 {
+    text-align: center;
+    font-size: 4rem;
+}
+.article5 .address {
+    text-align: center;
+    font-size: 2.1rem;
+    margin-bottom: 2rem;
+}
+.article5 .detail {
+    justify-content: space-between;
+    font-size: 1.2rem;
+}
+.article5 .detail dl {
+    width: 48%;
+    margin-bottom: 1rem;
+}
+.article5 .detail dl.liz_rogo {
+    border: solid 1px #817251;
+    color: #817251;
+    text-align: center;
+    padding: 3.5rem 0;
+}
+.article5 .detail dl.liz_rogo img {
+    width: 61.8%;
+}
+.article5 .right dt::before,
+.article5 .right dt::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    z-index: 1;
+}
+.article5 .right dt {
+    position: relative;
+}
+.article5 .right dt::before {
+    left: 0;
+    border-width: 18vw 32vw 0 0;
+    border-color: #fff transparent transparent transparent;
+}
+.article5 .right dt::after {
+    left: 50%;
+    border-width: 0 32vw 18vw 0;
+    border-color: transparent #fff transparent transparent;
+}
+.article5 .right span {
+    position: absolute;
+    top: -10vw;
+    left: -4vw;
+    z-index: 1;
+    border: solid 1px;
+    background-color: #ffffff;
+    padding: 1rem;
+    padding-left: 1.5rem;
+    font-size: 1.6rem;
+    letter-spacing: 0.5rem;
+    line-height: 1.6;
 
+}
 #p3 div.next {
     background-color: #ECEADA;
 }
@@ -514,6 +750,69 @@ div.next img, div.back img {
     #p2 .article2 div.cont.kasai .second{
         height: auto;
         width: 24rem;
+    }
+    .article4 .parse {
+        justify-content: space-between;
+    } 
+    .article5 .rogo img {
+        width: 35%;
+    }
+    .article5 .quality .detail {
+        position: absolute;
+        top: 20px;
+        left: 20px;
+        width: 384px;
+        background-color: rgba(0, 0, 0, 0.4);
+        color: #ffffff;
+        padding: 4rem 6rem;
+    }
+    .article5 .quality h3 {
+        text-align: left;
+        font-size: 2.0rem;
+    }
+    .article5 .quality h3 span {
+        font-size: 5.4rem;
+    }
+    .article5 .modelhouse .left {
+        order: 0;
+        width: 72%;
+    }
+    .article5 .modelhouse .right {
+        order: 1;
+        width: 28%;
+        position: absolute;
+        top: -23px;
+        font-size: 1.2rem;
+    }
+    .article5 .right dt, .article5 .right dd {
+        width: 218px;
+        margin: auto;
+    }
+    .article5 .address {
+        display: flex;
+        justify-content: center;
+    }
+    .article5 .address dd {
+        margin-left: 1rem;
+    }
+    .article5 .detail dl {
+        width: 22.5%;
+    }
+    .article5 .right dt::before {
+        left: 0;
+        border-width: 61px 108px 0 0;
+        border-color: #fff transparent transparent transparent;
+    }
+    .article5 .right dt::after {
+        left: 50%;
+        border-width: 0 108px 61px 0;
+        border-color: transparent #fff transparent transparent;
+    }
+    .article5 .right span {
+        left: unset;
+        right: 0;
+        top: -50px;
+        z-index: 10;
     }
     br.sp {
         display: none;
