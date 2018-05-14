@@ -234,7 +234,7 @@ ul, li, dl, dd, dt {
     /* height: 100%; */
     margin: 0 auto;
     padding: 0;
-    color: #000;
+    color: #444444;
 }
 .article, .inner {
     margin-bottom: 5rem;
@@ -250,11 +250,6 @@ ul, li, dl, dd, dt {
     height: 100% !important;
 }
 
-#p1 .fp-tableCell {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
 .fp-scrollable {
     width: 100%;
 }
@@ -352,6 +347,12 @@ div.next img, div.back img {
 .left {
     left: 0;
 }
+.article1{
+    height: 100%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+}
 
 #p2 .article {
     max-width: 1280px;
@@ -383,7 +384,7 @@ div.next img, div.back img {
 #p2 .article2 {
     display: flex;
     flex-wrap: wrap;
-    /* padding-bottom: 6rem; */
+    padding-bottom: 3rem;
 }
 #p2 {
     overflow: hidden;
@@ -440,7 +441,7 @@ div.next img, div.back img {
 }
 #p2 .article3 {
     text-align: center;
-    margin-bottom: 2rem;
+    margin-bottom: 4rem;
 } 
 
 #p2 .article3 div.mhm {
@@ -453,6 +454,9 @@ div.next img, div.back img {
 #p2 .article3 div.mhm div {
     width: 90%;
     margin: 0 5% 10%;
+} 
+.article4, .article5, .article7, .article8  {
+    margin-bottom: 8rem;
 } 
 .article4 .price {
     margin-bottom: 3rem;
@@ -793,6 +797,8 @@ div.next img, div.back img {
     margin: auto;
     text-align: center;
     display: flex;
+    align-items: center;
+
 }
 .article9 h2 {
     margin: auto;
@@ -955,6 +961,7 @@ div.next img, div.back img {
     }
     .article5 .quality h3 span {
         font-size: 5.4rem;
+        color: #ffffff;
     }
     .article5 .modelhouse .left {
         order: 0;
@@ -992,7 +999,7 @@ div.next img, div.back img {
         border-color: transparent #fff transparent transparent;
     }
     .article5 .right span {
-        left: unset;
+        left: auto;
         right: 0;
         top: -50px;
         z-index: 10;
@@ -1053,3 +1060,17 @@ div.next img, div.back img {
     }
 
 }
+@media all and (-ms-high-contrast: none){
+    #p1 .fp-tableCell {
+        justify-content: flex-start;
+    }
+    .button {
+        padding-top: 2rem;
+    }
+    .article4 .area {
+        padding: 1rem 1rem 0;
+    }
+    .article5 .right span {
+        padding: 1.5rem 1rem 0.5rem;
+    }
+  }
