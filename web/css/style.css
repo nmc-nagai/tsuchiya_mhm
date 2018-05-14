@@ -147,7 +147,7 @@ small {
 
 a { text-decoration: none;}
 a:hover { text-decoration: none;}
-/* a:link, a:visited, a:hover, a:active {color: #555;} */
+a:link, a:visited, a:hover, a:active {color: #555;}
 
 img {
     width: 100%;
@@ -165,7 +165,7 @@ ul, li, dl, dd, dt {
     text-align: center;
 }
 .button{
-    border:1px solid #c3b980; -webkit-border-radius: 0.3rem; -moz-border-radius: 0.3rem;border-radius: 0.3rem;font-size:1.6rem; padding: 1.2rem; text-decoration:none; display:inline-block;text-shadow: -0.1rem -0.1rem 0 rgba(0,0,0,0.3); color: #FFFFFF;
+    border:1px solid #c3b980; -webkit-border-radius: 0.3rem; -moz-border-radius: 0.3rem;border-radius: 0.3rem;font-size:1.6rem; padding: 1.2rem; text-decoration:none; display:inline-block;text-shadow: -0.1rem -0.1rem 0 rgba(0,0,0,0.3); color: #FFFFFF !important;
     background-color: #c5bb83; background-image: -webkit-gradient(linear, left top, left bottom, from(#c5bb83), to(#a29752));
     background-image: -webkit-linear-gradient(top, #c5bb83, #a29752);
     background-image: -moz-linear-gradient(top, #c5bb83, #a29752);
