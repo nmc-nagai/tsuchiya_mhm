@@ -5,6 +5,7 @@ html {
     height: 100%;
     font-family: serif;
     font-size: 2.2vw;
+    line-height: 1.3;
 }
 
 body {
@@ -28,10 +29,10 @@ body {
 h1 {
     text-shadow: 0.02rem 0.02rem 0.5rem #000;
     color: #fff;
-    font-size: 4rem;
+    font-size: 3.5rem;
     margin: auto;
     position: absolute;
-    bottom: 33%;
+    bottom: 40%;
     left: 0;
     right: 0;
     text-align: center;
@@ -138,7 +139,7 @@ p.price_cap{
     right: 0;
 }
 #p2 .article3 p {
-    margin-bottom: 1rem;
+    margin-bottom: 2rem;
 }
 small {
     font-size: 1rem;
@@ -164,7 +165,7 @@ ul, li, dl, dd, dt {
     text-align: center;
 }
 .button{
-    border:1px solid #c3b980; -webkit-border-radius: 3px; -moz-border-radius: 3px;border-radius: 3px;font-size:16px; padding: 12px 12px 12px 12px; text-decoration:none; display:inline-block;text-shadow: -1px -1px 0 rgba(0,0,0,0.3); color: #FFFFFF;
+    border:1px solid #c3b980; -webkit-border-radius: 0.3rem; -moz-border-radius: 0.3rem;border-radius: 0.3rem;font-size:1.6rem; padding: 1.2rem; text-decoration:none; display:inline-block;text-shadow: -0.1rem -0.1rem 0 rgba(0,0,0,0.3); color: #FFFFFF;
      background-color: #d5cea6; background-image: -webkit-gradient(linear, left top, left bottom, from(#d5cea6), to(#b7ad70));
      background-image: -webkit-linear-gradient(top, #d5cea6, #b7ad70);
      background-image: -moz-linear-gradient(top, #d5cea6, #b7ad70);
@@ -353,7 +354,7 @@ div.next img, div.back img {
 }
 
 #p2 .article {
-    /* max-width: 1000px; */
+    max-width: 1280px;
 }
 #p2 .article div.title {
     display: flex;
@@ -367,7 +368,7 @@ div.next img, div.back img {
 #p2 .article .main_image {
     width: 100%;
     height: 61.8vh;
-    background-image: url(../img/p4_img_top.jpg);
+    background-image: url(../img/top_img.jpg);
     background-position: 50% 50%;
     background-size: cover;
     background-repeat: no-repeat;
@@ -447,6 +448,7 @@ div.next img, div.back img {
     flex-wrap: wrap;
     justify-content: space-between;
     width: 100%;
+    margin-bottom: 1rem;
 } 
 #p2 .article3 div.mhm div {
     width: 90%;
@@ -457,7 +459,7 @@ div.next img, div.back img {
 } 
 .article4 .parse {
     padding: 3rem 3rem 0;
-    justify-content: center;
+    justify-content: space-around;
     background-color: #C3BCAC;
     list-style: none;
     margin-bottom: 2rem;
@@ -515,7 +517,7 @@ div.next img, div.back img {
 .article4 .detail {
     border: solid 1px #817251;
     padding: 2rem 2rem 1rem;
-    margin-bottom: 2rem;
+    margin-bottom: 3rem;
 }
 .article4 .detail p {
     margin-bottom: 1rem;
@@ -550,6 +552,8 @@ div.next img, div.back img {
 .article5 .quality h3 span {
     font-size: 3.5rem;
     display: block;
+    color: #817251;
+    margin-top: -0.5rem;
 }
 .article5 .quality .words {
     font-size: 1.4rem;
@@ -559,6 +563,7 @@ div.next img, div.back img {
 }
 .article5 .modelhouse {
     position: relative;
+    margin-bottom: 2rem;
 }
 .article5 .modelhouse .left {
     order: 1;
@@ -572,6 +577,8 @@ div.next img, div.back img {
 .article5 .modelhouse h3 {
     text-align: center;
     font-size: 4rem;
+    margin-bottom: 0.5rem;
+    color: #817251;
 }
 .article5 .address {
     text-align: center;
@@ -645,6 +652,7 @@ div.next img, div.back img {
     font-size: 2.2rem;
     line-height: 1.4;
     margin-bottom: 0.5rem;
+    color: #817251;
 }
 .article6 h2, .article6 p, .article7 h2 {
     margin-bottom: 2rem;
@@ -781,8 +789,13 @@ div.next img, div.back img {
     text-align: center;
 }
 .article9 {
-    height: 100vh;
-    position: relative;
+    height: 100vw;
+    position: absolute;
+    bottom: 0;
+    margin: 0 auto 5rem;
+    max-width: 400px;
+    left: 0;
+    right: 0;
 }
 .article9  p{
     position: absolute;
@@ -850,7 +863,7 @@ div.next img, div.back img {
         bottom: 9%;
     }
     #p2 .article .main_image {
-        height: 62vh;
+        height: 70vh;
     }
     #p2 .article div.title .cap_img {
     }
@@ -880,6 +893,10 @@ div.next img, div.back img {
 @media screen and (min-width: 1000px) {
     html, body {
         font-size: 10px;
+    }
+    h1 {
+        font-size: 6rem;
+        bottom: 30%;
     }
     h2 {
         font-size: 10rem;
@@ -911,6 +928,9 @@ div.next img, div.back img {
         height: auto;
         width: 24rem;
     }
+    .rel {
+        margin-left: 2rem;
+    }
     .article4 .parse {
         justify-content: space-between;
     } 
@@ -935,7 +955,7 @@ div.next img, div.back img {
     }
     .article5 .modelhouse .left {
         order: 0;
-        width: 72%;
+        width: 71%;
     }
     .article5 .modelhouse .right {
         order: 1;
@@ -945,7 +965,7 @@ div.next img, div.back img {
         font-size: 1.2rem;
     }
     .article5 .right dt, .article5 .right dd {
-        width: 218px;
+        width: 242px;
         margin: auto;
     }
     .article5 .address {
@@ -960,12 +980,12 @@ div.next img, div.back img {
     }
     .article5 .right dt::before {
         left: 0;
-        border-width: 61px 108px 0 0;
+        border-width: 68px 122px 0 0;
         border-color: #fff transparent transparent transparent;
     }
     .article5 .right dt::after {
         left: 50%;
-        border-width: 0 108px 61px 0;
+        border-width: 0 122px 68px 0;
         border-color: transparent #fff transparent transparent;
     }
     .article5 .right span {
@@ -1019,8 +1039,11 @@ div.next img, div.back img {
         text-align: left;
         margin-left: 1rem
     }
+    .article9 {
+        max-width: 1000px;
+    }
     .article9 h1 {
-        width: 30%;
+        width: 40%;
     }
     br.sp {
         display: none;
