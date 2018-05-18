@@ -925,6 +925,17 @@ div.next img, div.back img {
         font-size: 10rem;
         letter-spacing: 1.5rem;
     }
+    #p2 .article div.title {
+        justify-content: left;
+        width: 90%;
+    }
+    #p2 .article h2 {
+        font-size: 8rem;
+        margin-right: 2rem;
+    }
+    #p2 .article h3 {
+        line-height: 1.4;
+    }
     .article4 h2 {
         font-size: 6rem;
     }
