@@ -455,6 +455,10 @@ div.next img, div.back img {
     width: 90%;
     margin: 0 5% 10%;
 } 
+.article3 .mhm a:hover img,
+.article7 .flex a:hover img {
+    opacity: 0.8;
+}
 .article4, .article5, .article7, .article8  {
     margin-bottom: 8rem;
 } 
